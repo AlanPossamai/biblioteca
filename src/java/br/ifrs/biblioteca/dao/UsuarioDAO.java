@@ -34,7 +34,6 @@ public class UsuarioDAO {
 
 	public List<Usuario> obterTodos() throws Exception {
 		this.em = EntityManagerProvider.getInstance();
-		this.em.getEntityManagerFactory().getCache().evictAll();
 
 		TypedQuery<Usuario> query = this.em.createQuery("SELECT c FROM Usuario c", Usuario.class);
 		List<Usuario> usuarios = query.getResultList();

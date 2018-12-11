@@ -1,50 +1,47 @@
 $(document).ready(function() {
 	listar();
 
-    $("#pesquisaAluno").click(function() {
+    $("#pesquisaCategoria").click(function() {
         $.ajax({
-            url: 'AlunoController',
+            url: 'CategoriaController',
             type: 'GET',
             data: {
 				acao: 'pesquisar',
                 pesquisa: $('#pesquisa').val()
             }
-        }).done(function (alunos) {
-			renderTable(alunos);
+        }).done(function (categorias) {
+			renderTable(categorias);
         });
     });
 });
 
 function listar() {
 	$.ajax({
-		url: 'AlunoController',
+		url: 'CategoriaController',
 		type: 'GET',
 		data: {
 			acao: 'listar'
 		}
-	}).done(function (alunos) {
-		renderTable(alunos);
+	}).done(function (categorias) {
+		renderTable(categorias);
 	});
 }
 
-function renderTable(alunos) {
+function renderTable(categorias) {
 	$('#info').hide();
-	$('#listaAlunos').empty();
+	$('#listaCategorias').empty();
 
-	if ($.isArray(alunos) && alunos.length > 0) {
+	if ($.isArray(categorias) && categorias.length > 0) {
 		$('#resultado').show();
 
-		$.each(alunos, function () {
-			$('#listaAlunos').append(
+		$.each(categorias, function () {
+			$('#listaCategorias').append(
 				$('<tr>').append(
 					$('<td>', { text: this.id }),
-					$('<td>', { text: this.matricula }),
 					$('<td>', { text: this.nome }),
-					$('<td>', { text: this.curso }),
-					$('<td>', { text: this.turma }),
 					$('<td>').append(
 						$('<div>', { class: 'btn-group btn-group-sm' }).append(
-							$('<a>', { href: 'aluno.jsp?id=' + this.id, class: 'btn btn-primary', text: 'Editar ' }),
+							$('<a>', { href: 'categoria.jsp?id=' + this.id, class: 'btn btn-primary', text: 'Editar ' }),
 							$('<button>', { type: 'button', type: 'button', class: 'btn btn-danger', text: 'Excluir ', onClick: 'excluir(' + this.id + ')' })
 						)
 					)
@@ -59,7 +56,7 @@ function renderTable(alunos) {
 
 function excluir(id) {
     swal({
-        title: "Você têm certeza que deseja excluir o aluno?",
+        title: "Você têm certeza que deseja excluir a categoria?",
         text: "Nenhum dado poderá ser recuperado, incluindo o histórico de locações.",
         type: "warning",
 		showCancelButton: true,
@@ -69,7 +66,7 @@ function excluir(id) {
     }).then(function (e) {
 		if (e.value == true) {
 			$.ajax({
-				url: 'AlunoController',
+				url: 'CategoriaController',
 				type: 'POST',
 				data: {
 					acao: 'excluir',
@@ -78,9 +75,9 @@ function excluir(id) {
 			}).done(function (response) {
 
 				if (response == true) {
-					swal('Sucesso', 'Livro excluído com sucesso!');
+					swal('Sucesso', 'Categoria excluída com sucesso!');
 				} else {
-					swal('Erro', 'Não foi possível excluir o livro... Contate o administrador.');
+					swal('Erro', 'Não foi possível excluir a categoria... Contate o administrador.');
 				}
 
 				listar();

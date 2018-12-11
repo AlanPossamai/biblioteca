@@ -1,10 +1,6 @@
 $(document).ready(function() {
 	listar();
 
-    $("#novoAluno").click(function() {
-        window.location.href = 'cadaluno.jsp';
-    });
-
     $("#pesquisaAluno").click(function() {
         $.ajax({
             url: 'AlunoController',
