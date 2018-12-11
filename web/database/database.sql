@@ -1,0 +1,1 @@
+CREATE SCHEMA `biblioteca` DEFAULT CHARACTER SET utf8;
