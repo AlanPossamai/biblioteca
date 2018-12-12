@@ -1,5 +1,6 @@
 package br.ifrs.biblioteca.model;
 
+import com.google.gson.annotations.Expose;
 import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -13,15 +14,19 @@ public class Usuario implements Serializable {
 	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Expose
 	private Long id;
 
 	@Column(nullable = false, length = 255)
+	@Expose
 	private String nome;
 
 	@Column(nullable = false, length = 100)
+	@Expose
 	private String email;
 
 	@Column(nullable = false, length = 255)
+	@Expose
 	private String senha;
 
 	public Usuario(Long id, String nome, String email, String senha) {

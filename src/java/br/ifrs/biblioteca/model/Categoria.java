@@ -32,7 +32,7 @@ public class Categoria implements Serializable {
 	@Expose
 	private Long id;
 
-	@OneToMany(mappedBy = "categoria", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
+	@OneToMany(mappedBy = "categoria", fetch = FetchType.LAZY)
 	private List<Livro> livros;
 
 	@Column(nullable = false)

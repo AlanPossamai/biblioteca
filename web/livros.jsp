@@ -27,12 +27,14 @@
 		</header>
 
 		<section class="container mt-3">
-			<div class="input-group">
-				<input class="form-control border-secondary py-2" type="search" id="pesquisa" placeholder="Digite a sua pesquisa">
-				<div class="input-group-append">
-					<button class="btn btn-outline-secondary" type="button" id="pesquisar">
-						<i class="fa fa-search"></i>
-					</button>
+			<div class="row">
+				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="Pesquisar livro pelo nome" id="pesquisa">
+						<div class="input-group-append">
+							<button class="btn btn-secondary" type="button" id="pesquisar">Pesquisar</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -63,6 +65,8 @@
 			</div>
 		</section>
 
+		<div class="wait"></div>
+
 		<footer class="container mt-5">
 			<hr>
 			<div class="row">
@@ -74,7 +78,6 @@
 		<script src="js/jquery.js"></script>
 		<script src="js/popper.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/fontawesome/js/all.min.js"></script>
 		<script src="js/sweetalert/dist/sweetalert2.all.min.js"></script>
 
 		<script src="scripts/livros.js"></script>

@@ -63,7 +63,7 @@ function listarUnidades(unidades) {
 			$('<div>', { class: 'card' }).append(
 				$('<div>', { class: 'text-center' }).append(
 					$('<div>', { class: 'text-center' }).append(
-						$('<svg>', { class: 'barcode', 'jsbarcode-value': this.id.toString().padStart(12, '0') })
+						$('<svg>', { class: 'barcode', 'jsbarcode-value': this.id.toString().padStart(13, '0') })
 					)
 				)
 			)

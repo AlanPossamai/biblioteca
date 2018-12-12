@@ -28,6 +28,7 @@ function listar() {
 }
 
 function renderTable(usuarios) {
+	console.log(usuarios);
 	$('#info').hide();
 	$('#listaUsuarios').empty();
 
@@ -58,7 +59,7 @@ function renderTable(usuarios) {
 function excluir(id) {
     swal({
         title: "Você têm certeza que deseja excluir o usuario?",
-        text: "Nenhum dado poderá ser recuperado, incluindo o histórico de locações.",
+        text: "Nenhum dado poderá ser recuperado.",
         type: "warning",
 		showCancelButton: true,
 		cancelButtonColor: '#DD6B55',

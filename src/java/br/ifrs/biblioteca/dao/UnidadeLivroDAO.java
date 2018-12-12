@@ -18,9 +18,10 @@ public class UnidadeLivroDAO {
 	public List<UnidadeLivro> obterTodos() throws Exception {
 		this.em = EntityManagerProvider.getInstance();
 
-		TypedQuery<UnidadeLivro> query = this.em.createQuery("SELECT ul FROM UnidadeLivro ul ORDER BY ul.id", UnidadeLivro.class);
+		TypedQuery<UnidadeLivro> query = this.em.createQuery("SELECT ul FROM UnidadeLivro ul JOIN ul.livro ORDER BY ul.id", UnidadeLivro.class);
 		List<UnidadeLivro> unidadeLivros = query.getResultList();
 		this.em.close();
+		System.out.println(unidadeLivros);
 		return unidadeLivros;
 	}
 

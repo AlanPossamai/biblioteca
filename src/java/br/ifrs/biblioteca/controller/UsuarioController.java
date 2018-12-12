@@ -72,6 +72,9 @@ public class UsuarioController extends HttpServlet {
 					}
 
 					usuario.setNome(request.getParameter("nome"));
+					usuario.setEmail(request.getParameter("email"));
+					usuario.setSenha(request.getParameter("senha"));
+
 					this.dao.salvar(usuario);
 					response.getWriter().write("true");
 					break;

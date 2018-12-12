@@ -1,5 +1,6 @@
 package br.ifrs.biblioteca.model;
 
+import com.google.gson.annotations.Expose;
 import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.Column;
@@ -31,6 +32,7 @@ public class Emprestimo implements Serializable {
 	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Expose
 	private Long id;
 
 	public Long getId() {
@@ -39,21 +41,27 @@ public class Emprestimo implements Serializable {
 
 	@ManyToOne
 	@JoinColumn(name = "idAluno")
+	@Expose
 	private Aluno aluno;
 
 	@ManyToOne
 	@JoinColumn(name = "idUnidadeLivro")
+	@Expose
 	private UnidadeLivro unidadeLivro;
 
 	@Column(nullable = false, length = 11)
+	@Expose
 	private int periodo;
 
 	@Column(nullable = false, length = 1)
+	@Expose
 	private int status;
 
+	@Expose
 	private Date dataDevolucao;
 
 	@Column(nullable = true, length = 1)
+	@Expose
 	private int estado;
 
 	public void setId(Long id) {

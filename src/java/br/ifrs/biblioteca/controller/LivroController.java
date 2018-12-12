@@ -43,6 +43,7 @@ public class LivroController extends HttpServlet {
 
 		try {
 			Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
+			System.out.println(acao);
 
 			switch (acao) {
 				case "pesquisar":
@@ -57,6 +58,12 @@ public class LivroController extends HttpServlet {
 					Livro livro = this.dao.obter(id);
 					String jsonLivro = gson.toJson(livro);
 					response.getWriter().write(jsonLivro);
+					break;
+
+				case "obterunidades":
+					List<UnidadeLivro> unidades = this.unidadesDAO.obterTodos();
+					String jsonUnidades = gson.toJson(unidades);
+					response.getWriter().write(jsonUnidades);
 					break;
 
 				default:
@@ -77,10 +84,7 @@ public class LivroController extends HttpServlet {
 		response.setContentType("application/json");
 
 		try {
-			System.out.println("fuykgugugguhlihli");
 			if (request.getContentType().indexOf("multipart/form-data") >= 0) {
-				System.out.println("INIT UPLOAD");
-
 				String saveFile = new String();
 				String contentType = request.getContentType();
 
@@ -150,8 +154,6 @@ public class LivroController extends HttpServlet {
 					if (!request.getParameter("id").equals("")) {
 						livro.setId(Long.parseLong(request.getParameter("id")));
 					}
-
-					System.out.println(request.getParameter("unidadesLivro"));
 
 					ArrayList<UnidadeLivro> unidadesLivro = new ArrayList<>();
 					String idsUnidades[] = request.getParameterValues("unidadesLivro[]");

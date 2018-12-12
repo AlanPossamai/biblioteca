@@ -21,7 +21,7 @@
 					<h1>Cadastro de Usuários</h1>
 				</div>
 				<div class="col-2 mt-2">
-					<a href="usuario.jsp" class="btn btn-outline-primary w-100">Nova usuário</a>
+					<a href="usuario.jsp" class="btn btn-outline-primary w-100">Novo usuário</a>
 				</div>
 			</div>
 		</header>
@@ -50,10 +50,10 @@
 					<table class="table table-striped table-bordered table-condensed">
 						<thead>
 							<tr>
-                                                            <th>ID</th>
-                                                            <th>Nome</th>
-                                                            <th>E-Mail</th>
-                                                            <th>Ações</th>
+								<th>ID</th>
+								<th>Nome</th>
+								<th>E-Mail</th>
+								<th>Ações</th>
 							</tr>
 						</thead>
 						<tbody id="listaUsuarios"></tbody>

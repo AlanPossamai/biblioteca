@@ -8,17 +8,6 @@ $(document).on({
 	}
 });
 
-function getFormData(form) {
-    var formArray = $('#' + form).serializeArray();
-    var formData = {};
-
-    $.map(formArray, function (key, val) {
-        formData[key['name']] = key['value'];
-    });
-
-    return formData;
-}
-
 function getUrlParameter(name) {
 	name = name.replace(/[\[]/, '\\\[').replace(/[\]]/, '\\\]');
 	var regexS = '[\\?&]' + name + '=([^&#]*)';

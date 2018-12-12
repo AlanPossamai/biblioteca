@@ -8,7 +8,7 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="#">Início</a>
+					<a class="nav-link" href="index.jsp">Início</a>
 				</li>
 				<li class="nav-item active">
 					<a class="nav-link" href="categorias.jsp">Categorias</a>
@@ -26,7 +26,7 @@
 					<a class="nav-link" href="usuarios.jsp">Usuários</a>
 				</li>
 				<li class="nav-item active">
-					<a class="nav-link" href="deslogar.jsp">Sair</a>
+					<a class="nav-link" href="#">Sair</a>
 				</li>
 			</ul>
 		</div>

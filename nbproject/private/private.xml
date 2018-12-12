@@ -3,15 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group name="PPI_Prova2">
-            <file>file:/C:/Users/alanp/Documents/%23IFRS-BG/ADS%202018-2/Pratica%20Profissional%20Integrada%20II%20-%20Maurício%20Rosito/biblioteca/web/scripts/livro.js</file>
-            <file>file:/C:/Users/alanp/Documents/%23IFRS-BG/ADS%202018-2/Pratica%20Profissional%20Integrada%20II%20-%20Maurício%20Rosito/biblioteca/src/java/br/ifrs/biblioteca/dao/LivroDAO.java</file>
-            <file>file:/C:/Users/alanp/Documents/%23IFRS-BG/ADS%202018-2/Pratica%20Profissional%20Integrada%20II%20-%20Maurício%20Rosito/biblioteca/src/java/br/ifrs/biblioteca/controller/LivroController.java</file>
-            <file>file:/C:/Users/alanp/Documents/%23IFRS-BG/ADS%202018-2/Pratica%20Profissional%20Integrada%20II%20-%20Maurício%20Rosito/biblioteca/src/java/br/ifrs/biblioteca/model/Livro.java</file>
-            <file>file:/C:/Users/alanp/Documents/%23IFRS-BG/ADS%202018-2/Pratica%20Profissional%20Integrada%20II%20-%20Maurício%20Rosito/biblioteca/src/java/br/ifrs/biblioteca/model/Categoria.java</file>
-            <file>file:/C:/Users/alanp/Documents/%23IFRS-BG/ADS%202018-2/Pratica%20Profissional%20Integrada%20II%20-%20Maurício%20Rosito/biblioteca/src/java/br/ifrs/biblioteca/model/UnidadeLivro.java</file>
-            <file>file:/C:/Users/alanp/Documents/%23IFRS-BG/ADS%202018-2/Pratica%20Profissional%20Integrada%20II%20-%20Maurício%20Rosito/biblioteca/src/java/br/ifrs/biblioteca/model/Usuario.java</file>
-            <file>file:/C:/Users/alanp/Documents/%23IFRS-BG/ADS%202018-2/Pratica%20Profissional%20Integrada%20II%20-%20Maurício%20Rosito/biblioteca/src/java/br/ifrs/biblioteca/model/Aluno.java</file>
-            <file>file:/C:/Users/alanp/Documents/%23IFRS-BG/ADS%202018-2/Pratica%20Profissional%20Integrada%20II%20-%20Maurício%20Rosito/biblioteca/src/java/br/ifrs/biblioteca/model/Emprestimo.java</file>
+            <file>file:/C:/Users/alanp/Documents/%23IFRS-BG/ADS%202018-2/Pratica%20Profissional%20Integrada%20II%20-%20Maurício%20Rosito/biblioteca/web/categorias.jsp</file>
+            <file>file:/C:/Users/alanp/Documents/%23IFRS-BG/ADS%202018-2/Pratica%20Profissional%20Integrada%20II%20-%20Maurício%20Rosito/biblioteca/web/livros.jsp</file>
+            <file>file:/C:/Users/alanp/Documents/%23IFRS-BG/ADS%202018-2/Pratica%20Profissional%20Integrada%20II%20-%20Maurício%20Rosito/biblioteca/web/navbar.jsp</file>
         </group>
     </open-files>
 </project-private>

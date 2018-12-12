@@ -98,7 +98,6 @@
 		<script src="js/popper.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/barcode.js"></script>
-		<script src="js/fontawesome/js/all.min.js"></script>
 		<script src="js/sweetalert/dist/sweetalert2.all.min.js"></script>
 
 		<script src="scripts/utils.js"></script>
